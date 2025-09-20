@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self';">
+  <title>Popup Editor</title>
+  <link rel="stylesheet" href="popup-styles.css">
+</head>
+<body>
+  <!-- Resize handles -->
+  <div class="resize-handle n"></div>
+  <div class="resize-handle s"></div>
+  <div class="resize-handle e"></div>
+  <div class="resize-handle w"></div>
+  <div class="resize-handle ne"></div>
+  <div class="resize-handle nw"></div>
+  <div class="resize-handle se"></div>
+  <div class="resize-handle sw"></div>
+  
+  <!-- Drag indicator -->
+  <div class="drag-indicator" id="dragIndicator">Click & Drag to Move</div>
+  
+  <div class="editor-container">
+    <div class="editor-content">
+      <div class="editor-title">EDIT POPUP</div>
+      <div class="editor-instructions">
+        Click & drag to move • Drag edges to resize
+      </div>
+      <div class="editor-size-display" id="sizeDisplay">Width: 300px, Height: 120px</div>
+      <div class="editor-buttons">
+        <button class="editor-button save" id="saveBtn">Save</button>
+        <button class="editor-button cancel" id="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup-renderer.js"></script>
+</body>
+</html> 

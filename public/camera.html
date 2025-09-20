@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:;">
+  <title>Camera Visualization</title>
+  <link rel="stylesheet" href="popup-styles.css">
+</head>
+<body>
+  <div class="camera-container">
+    <canvas id="canvas" class="camera-canvas"></canvas>
+    <div id="status" class="camera-status">Camera: Initializing...</div>
+    <div id="info" class="camera-info">
+      When your eye size goes below your set threshold a blink is detected
+    </div>
+    <div id="tip" class="camera-tip">
+      <strong>Tip:</strong> If green dots aren't tracking your eyes precisely, improve your lighting and/or clean your camera lens.
+    </div>
+    <div id="current-values" class="camera-values">
+      <strong>Current:</strong> Eye size: 0.000
+      <br>
+      <strong>Threshold:</strong> 0.200
+    </div>
+  </div>
+  <script src="popup-renderer.js"></script>
+</body>
+</html> 
